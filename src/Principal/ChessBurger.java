@@ -1,3 +1,4 @@
+package Principal;
 
 public class ChessBurger {
 	
@@ -7,7 +8,7 @@ public class ChessBurger {
 		plateau = new Plateau();
 	}
 
-	void initialisePlateau() {		//Visuel + Pieces
+	void AffichePlateau() {		//Visuel + Pieces
 		
 	}
 	
