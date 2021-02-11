@@ -2,7 +2,7 @@ package Principal;
 
 public class ChessBurger {
 	
-	Plateau plateau;
+	 Plateau plateau;
 	
 	ChessBurger() {
 		plateau = new Plateau();
