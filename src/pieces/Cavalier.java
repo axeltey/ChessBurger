@@ -1,5 +1,4 @@
 package pieces;
-
 import Principal.*;
 
 public class Cavalier extends Pieces{
