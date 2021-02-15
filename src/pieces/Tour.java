@@ -1,7 +1,7 @@
 package pieces;
 import Principal.*;
 
-public class Tour extends Pieces{
+public class Tour extends Piece{
 
 	public Tour(Couleur couleur){
 		super(couleur);

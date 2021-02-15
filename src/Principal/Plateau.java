@@ -4,14 +4,14 @@ import pieces.*;
 
 public class Plateau {
 	
-	public Pieces [][] plateau; //je suis pas sûr du public mais j en ai besoin pour y acceder pour les deplacements ...
+	public Piece [][] plateau; //je suis pas sûr du public mais j en ai besoin pour y acceder pour les deplacements ...
 	
 	Plateau() {
 		initialisePlateau();
 	}
 
 	void initialisePlateau() {
-		plateau = new Pieces [8][8];
+		plateau = new Piece [8][8];
 		for (int i=0;i<8;i++) {
 			plateau[1][i] = new Pion(Couleur.values()[0]);
 			plateau[6][i] = new Pion(Couleur.values()[1]);
@@ -35,7 +35,7 @@ public class Plateau {
 		plateau[0][0] = new Tour(Couleur.values()[0]);
 	}
 	
-@Override
+	@Override
 	public String toString() {
 		String s="";
 		for(int i=0;i<8;i++) {
@@ -46,6 +46,22 @@ public class Plateau {
 			s+="]\n";
 		}
 		return s;
+	}
+	
+	
+	public boolean deplacementPossible(Piece piece, int x,int y){
+		boolean trouve=false;
+		for(int i=0;i<plateau.length;i++) {
+			for(int o=0;o<plateau.length;o++) {
+				if(plateau[i][i]==piece){
+					trouve =true;
+					break;
+				}
+			}
+			if(trouve)break;
+		}
+		
+		return false;
 	}
 	
 }

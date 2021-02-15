@@ -1,7 +1,7 @@
 package pieces;
 import Principal.*;
 
-public class Reine extends Pieces{
+public class Reine extends Piece{
 
 	public Reine(Couleur couleur){
 		super(couleur);
