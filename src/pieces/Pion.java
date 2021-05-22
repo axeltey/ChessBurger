@@ -8,7 +8,7 @@ public class Pion extends Piece{
 		super(couleur);
 	}
 	
-	public int [][] deplacements(int [] position, Plateau plateau) {
+	public boolean[][] deplacements(int [] position, Plateau plateau) {
 		int x;
 		
 		if (plateau.plateau[position[0]][position[1]].getCouleur()==Couleur.values()[0]) {
@@ -32,7 +32,7 @@ public class Pion extends Piece{
 				addDeplacementsPossibles(position[0]+x,position[1]-1);
 			}
 		}
-		return 0;
+		return null;
 	}
 
 	public String toString() {
