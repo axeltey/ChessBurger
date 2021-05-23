@@ -1,4 +1,7 @@
-package Principal;
+package pieces;
+
+import Principal.Couleur;
+import Principal.Plateau;
 
 public abstract class Piece {
 
