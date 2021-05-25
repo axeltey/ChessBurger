@@ -1,7 +1,7 @@
-package pieces;
+package cases;
 
-import Principal.Couleur;
-import Principal.Plateau;
+import principal.Couleur;
+import principal.Plateau;
 
 public abstract class Piece {
 

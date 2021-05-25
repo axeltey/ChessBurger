@@ -1,5 +1,5 @@
-package pieces;
-import Principal.*;
+package cases;
+import principal.*;
 
 public class Tour extends Piece{
 
