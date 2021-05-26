@@ -24,9 +24,9 @@ public class ImagePanel extends JPanel{
 	    	e.printStackTrace();
 	    }
 	    this.setPreferredSize(new Dimension(image.getWidth(this), image.getHeight(this)));
-	  }
-
-	  public void paint(Graphics g) {
-	    g.drawImage(image, 0, 0, null);
-	  }
+	}
+	
+	public void paint(Graphics g) {
+		g.drawImage(image, 0, 0, null);
+	}
 }
