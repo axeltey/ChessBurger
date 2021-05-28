@@ -12,10 +12,12 @@ public class Plateau {
 	private Case [][] cases; //je suis pas sûr du public mais j en ai besoin pour y acceder pour les deplacements ...
 	
 	Plateau() throws IOException {
-		cases = new Case [8][8];
-		initialiseCases();
-		initialisePlateau();
+		//cases = new Case [8][8];
+		//initialiseCases();
+		//initialisePlateau();
 		plateau=new InterfacePlateau();
+		Pion pion = new Pion(Couleur.BLANC);
+		pion.afficherPiece("../ressources/images/pionBlanc.png", 0, 0,plateau.getPlateau());
 	}
 	
 	private void initialiseCases() {
